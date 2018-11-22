@@ -1,0 +1,22 @@
+.about {
+    .about__container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .about__content {
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about__slider {
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+
+    .about__title {
+        text-align: center;
+    }
+}

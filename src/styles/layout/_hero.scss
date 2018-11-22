@@ -1,0 +1,19 @@
+.hero {
+
+    .hero__container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hero__slider {
+        width: 50%;
+    }
+
+    .hero__content {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

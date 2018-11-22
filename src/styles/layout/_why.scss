@@ -1,0 +1,27 @@
+.why {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .why__container {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .why__list {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+        .why__item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 23%;
+            height: 300px;
+            background: gray;
+            padding: 0 20px;
+            text-align: center;
+        }
+    }
+}

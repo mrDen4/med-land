@@ -22,12 +22,7 @@ body {
   position: relative;
 }
 
-.section {
-  background: #000;
-}
-
 .title {
-  color: #ffffff;
   font-style: bold;
   font-size: 48px;
   line-height: 68px;
@@ -38,14 +33,10 @@ body {
   }
 }
 
-.text {
-  color: #ffffff;
-}
-
 .button {
   height: 50px;
-  border-radius: 25px;
-  width: 170px;
+  border-radius: 4px;
+  width: 370px;
   border: none;
   background: $red;
   color: #ffffff;
@@ -55,6 +46,11 @@ body {
   font-style: bold;
   cursor: pointer;
   transition: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
 
   &:hover {
     background: darken($color: $red, $amount: 15);
