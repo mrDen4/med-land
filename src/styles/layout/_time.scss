@@ -1,4 +1,7 @@
 .time {
+    background: #CBEFFF;
+    padding-top: 100px;
+    padding-bottom: 100px;
 
     .time__container {
         align-items: center;
@@ -6,9 +9,7 @@
     }
 
     .time__timer {
-        width: 70%;
-        height: 300px;
-        background: gray;
+        width: 100%;
     }
 
     .time__about {
