@@ -30,6 +30,10 @@
             font-size: 20px;
             border: 2px solid #F1F1F1;
 
+            @include phones() {
+                width: 100%;
+            }
+
             &:hover {
                 background: $red;
                 color: #ffffff;

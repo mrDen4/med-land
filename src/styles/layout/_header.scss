@@ -5,14 +5,39 @@
         justify-content: space-between;
         flex-direction: row;
         align-items: center;
+        justify-content: center;
+
+        @include phones() {
+            flex-direction: column;
+        }
+    }
+
+    .header__logo {
+        @include phones() {
+            width: 100%;
+        }
+
+        .logo__img {
+            width: 100%;
+        }
     }
 
     .header__soc {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
 
         .soc__item {
             margin-right: 20px;
+
+            &--phone {
+                width: 100%;
+                margin-right: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
         }
 
         .item__link {

@@ -4,6 +4,10 @@
 
     .footer__container {
         flex-direction: row;
+
+        @include phones() {
+            flex-direction: column;
+        }
     }
 
     .footer__left {
@@ -11,8 +15,13 @@
         flex-direction: column;
         width: 45%;
 
+        @include phones() {
+            width: 100%;
+        }
+
         .left__title {
             margin: 0;
+            text-align: center;
         }
 
         .left__link {
@@ -33,14 +42,41 @@
         justify-content: space-around;
         align-items: flex-end;
         width: 45%;
+
+        @include phones() {
+            width: 100%;
+        }
+    }
+    
+    .right__btn {
+        width: 100%;
+        font-size: 14px;
+        margin-top: 20px;
     }
 
     .right__soc {
         display: flex;
         align-items: center;
 
+        @include phones() {
+            flex-wrap: wrap;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+
         .soc__item {
             margin-right: 20px;
+        }
+
+        .soc__item--phone {
+            @include phones() {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 0;
+            }
         }
 
         .item__link {

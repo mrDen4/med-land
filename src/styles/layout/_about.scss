@@ -1,16 +1,28 @@
 .about {
     background: #CBEFFF;
 
+    @include phones() {
+        padding-bottom: 50px;
+    }
+
     .about__container {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+
+        @include phones() {
+            flex-direction: column;
+        }
     }
 
     .about__content {
         width: 50%;
         justify-content: center;
         align-items: center;
+
+        @include phones() {
+            width: 100%;
+        }
     }
 
     .content__text {
@@ -21,6 +33,21 @@
         justify-content: center;
         align-items: center;
         width: 50%;
+        height: 350px;
+        overflow: hidden;
+
+        @include phones() {
+            width: 100%;
+        }
+
+        .slider__slide {
+            height: 350px;
+            overflow: hidden;
+
+            .slide__img {
+                height: 100%;
+            }
+        }
     }
 
     .about__title {

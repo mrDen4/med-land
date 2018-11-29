@@ -1,13 +1,35 @@
 .hero {
     background: #CBEFFF;
+    
+    @include phones() {
+        padding-bottom: 50px;
+    }
 
     .hero__container {
         flex-direction: row;
         justify-content: space-between;
+
+        @include phones() {
+            flex-direction: column;
+        }
     }
 
     .hero__slider {
         width: 55%;
+        height: 350px;
+        overflow: hidden;
+
+        @include phones() {
+            width: 100%;
+        }
+
+        .slider__slide {
+            height: 350px;
+
+            .slide__img {
+                height: 100%;
+            }
+        }
     }
 
     .hero__content {
@@ -17,11 +39,20 @@
         align-items: center;
         justify-content: center;
         padding-left: 20px;
+
+        @include phones() {
+            width: 100%;
+            padding-left: 0;
+        }
     }
 
     .content__title {
         text-align: center;
         margin-bottom: 100px;
         font-size: 34px;
+
+        @include phones() {
+            margin-bottom: 35px;
+        }
     }
 }
