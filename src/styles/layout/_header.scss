@@ -5,10 +5,10 @@
         justify-content: space-between;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
 
         @include phones() {
             flex-direction: column;
+            justify-content: center;
         }
     }
 
@@ -32,11 +32,14 @@
             margin-right: 20px;
 
             &--phone {
-                width: 100%;
-                margin-right: 0;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+
+                @include tablets() {
+                    width: 100%;
+                    margin-right: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
             }
         }
 

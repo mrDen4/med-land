@@ -11,13 +11,18 @@
     .time__timer {
         width: 100%;
 
-        @include phones() {
+        @include tablets() {
             display: none;
         }
     }
 
-    .time__timer--mobile {
+    .time__title {
+        text-align: center;
+    }
+
+    .time__timer-mobile {
         display: none;
+        overflow: hidden;
 
         @include tablets() {
             display: block;

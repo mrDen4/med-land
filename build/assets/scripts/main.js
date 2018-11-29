@@ -19,6 +19,8 @@ $(document).ready(function () {
   });
 
   $('.hero__slider').slick({
-    arrows: false
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000
   });
 });

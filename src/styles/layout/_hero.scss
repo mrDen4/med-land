@@ -1,9 +1,6 @@
 .hero {
     background: #CBEFFF;
-    
-    @include phones() {
-        padding-bottom: 50px;
-    }
+    padding-bottom: 50px;
 
     .hero__container {
         flex-direction: row;
@@ -14,26 +11,8 @@
         }
     }
 
-    .hero__slider {
-        width: 55%;
-        height: 350px;
-        overflow: hidden;
-
-        @include phones() {
-            width: 100%;
-        }
-
-        .slider__slide {
-            height: 350px;
-
-            .slide__img {
-                height: 100%;
-            }
-        }
-    }
-
     .hero__content {
-        width: 45%;
+        width: 50%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -53,6 +32,31 @@
 
         @include phones() {
             margin-bottom: 35px;
+        }
+    }
+
+    .content__btn {
+        @include phones() {
+            width: 100%;
+        }
+    }
+}
+
+.hero__slider {
+    width: 45%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include phones() {
+        width: 100%;
+    }
+
+    .slider__slide {
+
+        .slide__img {
+            width: 100%;
         }
     }
 }

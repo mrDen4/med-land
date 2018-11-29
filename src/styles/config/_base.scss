@@ -51,6 +51,7 @@ body {
   justify-content: center;
   text-decoration: none;
   text-align: center;
+  padding: 10px;
 
   &:hover {
     background: darken($color: $red, $amount: 15);
