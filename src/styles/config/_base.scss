@@ -26,6 +26,7 @@ body {
   font-style: bold;
   font-size: 48px;
   line-height: 68px;
+  margin-top: 0;
 
   @include tablets() {
     font-size: 30px;

@@ -1,18 +1,14 @@
 .about {
     background: #CBEFFF;
+    padding-top: 50px;
+    padding-bottom: 50px;
 
     @include phones() {
         padding-bottom: 50px;
     }
 
     .about__container {
-        flex-direction: row;
         align-items: center;
-        justify-content: space-between;
-
-        @include phones() {
-            flex-direction: column;
-        }
     }
 
     .about__content {
@@ -27,6 +23,19 @@
 
     .content__text {
         font-size: 18px;
+    }
+
+    .about__center {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        min-height: 400px;
+
+        @include phones() {
+            flex-direction: column;
+        }
     }
 
     .about__slider {
